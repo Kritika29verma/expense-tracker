@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.anim-card   { animation: fadeInUp 0.45s cubic-bezier(0.16,1,0.3,1) forwards; }
+.anim-fade   { animation: fadeIn 0.35s ease forwards; }
+.anim-navbar { animation: slideDown 0.35s ease forwards; }
+
+.field-1 { animation: fadeInUp 0.4s ease 0.05s both; }
+.field-2 { animation: fadeInUp 0.4s ease 0.10s both; }
+.field-3 { animation: fadeInUp 0.4s ease 0.15s both; }
+.field-4 { animation: fadeInUp 0.4s ease 0.20s both; }
+.field-5 { animation: fadeInUp 0.4s ease 0.25s both; }
+.field-6 { animation: fadeInUp 0.4s ease 0.30s both; }
+
+.btn-main { transition: transform 0.15s ease, opacity 0.15s ease; }
+.btn-main:hover  { transform: translateY(-1px); opacity: 0.88; }
+.btn-main:active { transform: scale(0.98); }
+.btn-tab  { transition: all 0.18s ease; }
+
+.input-field { transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+.input-field:focus { outline: none; box-shadow: 0 0 0 3px rgba(99,102,241,0.18); }
+
+.switch-link { transition: opacity 0.15s ease; }
+.switch-link:hover { opacity: 0.7; text-decoration: underline; }
+
+.msg-pop { animation: fadeInUp 0.25s ease forwards; }
+
+*, *::before, *::after {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
